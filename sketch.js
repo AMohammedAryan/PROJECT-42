@@ -18,7 +18,7 @@ function draw() {
 
   scAngle = map(sc, 0, 60, 0, 360);
   minAngle = map(min, 0, 60, 0, 360);
-  hrAngle = map(hr%12, 0, 24, 0, 360);
+  hrAngle = map(hr%12, 0, 12, 0, 360);
 
   translate(width/2, height/2);
 
