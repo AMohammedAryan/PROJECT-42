@@ -21,6 +21,7 @@ function draw() {
   hrAngle = map(hr%12, 0, 12, 0, 360);
 
   translate(width/2, height/2);
+  rotate(-90);
 
   noFill();
 
@@ -29,7 +30,7 @@ function draw() {
   rotate(scAngle);
   stroke("red");
   strokeWeight(7);
-  line(0, 0, 300, 0);
+  line(0, 0, 250, 0);
 
   pop();
 
@@ -38,7 +39,7 @@ function draw() {
   rotate(minAngle);
   stroke("green");
   strokeWeight(7);
-  line(0, 0, 200, 0);
+  line(0, 0, 150, 0);
 
   pop();
 
@@ -53,11 +54,11 @@ function draw() {
 
   stroke("red");
 
-  arc(0, 0, 600, 600, 0, scAngle);
+  arc(0, 0, 500, 500, 0, scAngle);
 
   stroke("green");
 
-  arc(0, 0, 400, 400, 0, minAngle);
+  arc(0, 0, 300, 300, 0, minAngle);
 
   stroke("blue");
 
